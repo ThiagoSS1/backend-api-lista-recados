@@ -10,7 +10,7 @@ export default class UserRoutes {
       routes.post("/users", new CreateUserController().handle);
       routes.get("/users/:uid", new GetOneUserController().handle);
       routes.post("/login", new LoginUserController().handle);
-  
+      console.log("UserRoutes");	
       return routes;
     }
   }
